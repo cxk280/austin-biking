@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 //This:
@@ -39,48 +38,10 @@ class AddressField extends Component {
 //   }
 // }
 
-class GoogleMapsInitScript extends Component {
-  render() {
-    return (
-      <div>
-        const initScript = document.createElement("script");
-
-        initScript.innerHTML = "let map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 30.3074624, lng: -98.0336022},
-                zoom: 8
-              })
-            }"
-
-        document.body.appendChild(script);
-      </div>
-    )
-  }
-}
-
-class GoogleMapsSrcScript extends Component {
-  render() {
-    return (
-      <div>
-        const SrcScript = document.createElement("script");
-
-        script.src = "https://maps.googleapis.com/maps/api/js?key=" + process.env.REACT_APP_GOOGLE_MAPS_API_KEY + "&callback=initMap";
-        script.async = true;
-        script.defer = true;
-
-        document.body.appendChild(script);
-      </div>
-    )
-  }
-}
-
 class GoogleMaps extends Component {
   render() {
     return (
       <div id="map">
-        <GoogleMapsInitScript />
-        <GoogleMapsSrcScript />
       </div>
     )
   }
