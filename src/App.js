@@ -17,7 +17,7 @@ import './App.css';
 
 //are equivalent. Use the latter in this app.
 
-class AddressField extends React.Component {
+class AddressField extends Component {
   render() {
     return (
       <div>
@@ -29,6 +29,24 @@ class AddressField extends React.Component {
     )
   }
 }
+
+// class AustinTrails extends Component {
+//   render() {
+//     return (
+//       <div>
+//       </div>
+//     )
+//   }
+// }
+
+// class GoogleMaps extends Component {
+//   render() {
+//     return (
+//       <div>
+//       </div>
+//     )
+//   }
+// }
 
 
 
